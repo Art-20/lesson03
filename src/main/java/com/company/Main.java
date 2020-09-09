@@ -15,6 +15,8 @@ public class Main {
 
         Scanner sc4 = new Scanner(System.in);
         int variant = sc4.nextInt();
+
+
         //Калькулятор
         if (variant == 1) {
 
@@ -62,19 +64,26 @@ public class Main {
             Checker checker = new Checker();
             checker.isEven(number);
             checker.isOdd(number);
-        }
 
-        // Game
-        if (variant == 3 ) {
-            System.out.println("Игра в разработке ");
-          //  Game game = new Game();
-           // game.game();
-
-        }
-        else{
-            System.out.println("Неверно введено число. Запустите программу заново");
+            if (checker.isEven(number) == true) {
+                System.out.println("число " + number + " четное");
+            } else {
+                System.out.println("число " + number + " нечетное");
+            }
         }
 
 
+            // Game
+            if (variant == 3) {
+              //  System.out.println("Игра в разработке ");
+                Game game = new Game();
+                game.game();
+
+            }
+            if (variant != 1 && variant != 2 && variant != 3) {
+                System.out.println("Неверно введено число. Запустите программу заново");
+            }
+
+
+        }
     }
-}

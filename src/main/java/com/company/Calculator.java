@@ -12,8 +12,9 @@ public class Calculator {
     }
 
     public long multiply(int a, int b) {
-
-        return (a*b);
+       // long c = (a*b);
+       // return c;
+        return (long) a*b;
     }
 
     public double division(int a, int b) {
