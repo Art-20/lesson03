@@ -1,5 +1,6 @@
 package com.company;
 
+import java.io.IOException;
 import java.time.Year;
 import java.util.Random;
 import java.util.Scanner;
@@ -16,24 +17,21 @@ public class Game {
         Scanner sc_ok = new Scanner(System.in);
         String ok = sc_ok.nextLine();
 
-        if (ok == ok) {
-
+        if (ok.contains("ok")) {
             do {
             Random newRandom = new Random();
-        int num = newRandom.nextInt(10);
-        System.out.println("Ваше число " + num + " ? Если да, введи y, если нет - n");
-            Scanner sc_y = new Scanner(System.in);
-            String y = sc_y.nextLine();
-            if (y == y) {
-                System.out.println("Ура! Я угадал");
-            }
-
+            int num = newRandom.nextInt(10);
+            System.out.println("Ваше число " + num + " ? Если да, введи y, если нет - n");
+                Scanner sc_y = new Scanner(System.in);
+                String y = sc_y.nextLine();
+                if (y.contains("y"));
             } while (true);
-
+           // System.out.println("Ура! Угадал!!");
         }
 
 
-    }
+
+  }
 
 
 
