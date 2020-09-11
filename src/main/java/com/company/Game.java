@@ -26,6 +26,7 @@ public class Game {
                 String y = sc_y.nextLine();
                 if (y.contains("y"));
             } while (true);
+            
            // System.out.println("Ура! Угадал!!");
         }
 
